@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Bu proje, Java Swing kütüphanesi kullanılarak geliştirilen bir GUI uygulamasını içermektedir. Model-View-Controller (MVC) tasarım modeli benimsenmiş ve verilerin saklanması için MySQL veritabanı entegrasyonu yapılmıştır. Bu README dosyası, proje hakkında detaylı teknik bilgiler ve açıklamalar sunacaktır.
 
 Proje Açıklaması
@@ -25,3 +26,6 @@ MVC modeli için Java sınıfları oluşturulur. Örneğin, ListModel sınıfı 
 Kullanıcılar, uygulama aracılığıyla yeni öğeler ekleyebilir, mevcut öğeleri düzenleyebilir veya silebilir.
 
 Uygulama, kullanıcıların girişlerini doğrulamak ve hatalara karşı korumak için gerekli kontrolleri içerir.
+=======
+
+>>>>>>> 4ee89319c5defda44e750808d82bba658afadbae
