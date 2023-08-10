@@ -24,7 +24,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="959" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="1044" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
@@ -34,6 +34,8 @@
               <Component id="txtBookListSearch" min="-2" pref="655" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Component id="btnBookListEdit" min="-2" pref="108" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="btnCopy" min="-2" pref="88" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -46,6 +48,7 @@
                   <Component id="jLabel1" alignment="3" max="32767" attributes="0"/>
                   <Component id="txtBookListSearch" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="btnBookListEdit" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="btnCopy" alignment="3" min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="551" max="-2" attributes="0"/>
@@ -98,6 +101,16 @@
     <Component class="javax.swing.JButton" name="btnBookListEdit">
       <Properties>
         <Property name="text" type="java.lang.String" value="D&#xfc;zenle"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCopy">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Okundu"/>
+        <Property name="requestFocusEnabled" type="boolean" value="false"/>
+        <Property name="rolloverEnabled" type="boolean" value="false"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

@@ -5,6 +5,7 @@ import command.BookListingCommand;
 import command.BookReadListingCommand;
 import command.Command;
 import command.GeneralListener;
+import command.MouseListenerCommand;
 import model.BookModel;
 import view.BookList;
 import view.BookListEdit;
@@ -47,6 +48,23 @@ public class BookReadController implements Command {
         bookListFrame.getTxtBookListSearch().addKeyListener(new BookListSearchCommand(bookListFrame));
 
         bookListFrame.getBtnBookListEdit().addActionListener(new GeneralListener(new BookReadEditController(mainFrame)));
+        
+        this.bookListFrame = new BookList();
+    mainFrame.DesktopPane.add(bookListFrame);
+    bookListFrame.setVisible(true);
+
+    bookReadListingCommand = new BookReadListingCommand(bookListFrame);
+    bookReadListingCommand.execute();
+
+    bookListFrame.getTxtBookListSearch().addKeyListener(new BookListSearchCommand(bookListFrame));
+
+    bookListFrame.getBtnBookListEdit().addActionListener(new GeneralListener(new BookReadEditController(mainFrame)));
+    
+    //bookListFrame.tblBookList.addMouseListener(new GeneralListener(new MouseListenerCommand(bookListFrame)));
+    
+    bookListFrame.btnCopy.addActionListener(new GeneralListener (new MouseListenerCommand(bookListFrame)));
+        
+        
 
     }
 

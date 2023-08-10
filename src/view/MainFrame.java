@@ -30,9 +30,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         DesktopPane = new javax.swing.JDesktopPane();
-        btnMovieList = new javax.swing.JButton();
         btnBookRead = new javax.swing.JButton();
-        btnMovieWatch = new javax.swing.JButton();
         btnBookList = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -41,21 +39,12 @@ public class MainFrame extends javax.swing.JFrame {
         DesktopPane.setLayout(DesktopPaneLayout);
         DesktopPaneLayout.setHorizontalGroup(
             DesktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1148, Short.MAX_VALUE)
+            .addGap(0, 1138, Short.MAX_VALUE)
         );
         DesktopPaneLayout.setVerticalGroup(
             DesktopPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-
-        btnMovieList.setText("İzlediğim Film ve Diziler");
-        btnMovieList.setAlignmentY(0.15F);
-        btnMovieList.setAutoscrolls(true);
-        btnMovieList.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMovieListActionPerformed(evt);
-            }
-        });
 
         btnBookRead.setText("Okuma Listem");
         btnBookRead.setAlignmentY(0.15F);
@@ -63,15 +52,6 @@ public class MainFrame extends javax.swing.JFrame {
         btnBookRead.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookReadActionPerformed(evt);
-            }
-        });
-
-        btnMovieWatch.setText("İzleme Listem");
-        btnMovieWatch.setAlignmentY(0.15F);
-        btnMovieWatch.setAutoscrolls(true);
-        btnMovieWatch.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMovieWatchActionPerformed(evt);
             }
         });
 
@@ -90,12 +70,10 @@ public class MainFrame extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnBookList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMovieList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMovieWatch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnBookRead, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnBookRead, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBookList, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
                 .addComponent(DesktopPane))
         );
         layout.setVerticalGroup(
@@ -105,31 +83,19 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(DesktopPane)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(131, 131, 131)
+                .addGap(89, 89, 89)
                 .addComponent(btnBookList, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(72, 72, 72)
+                .addGap(77, 77, 77)
                 .addComponent(btnBookRead, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75)
-                .addComponent(btnMovieList, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(79, 79, 79)
-                .addComponent(btnMovieWatch, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(284, Short.MAX_VALUE))
+                .addContainerGap(545, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnMovieListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieListActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnMovieListActionPerformed
-
     private void btnBookReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookReadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnBookReadActionPerformed
-
-    private void btnMovieWatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMovieWatchActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnMovieWatchActionPerformed
 
     private void btnBookListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookListActionPerformed
         // TODO add your handling code here:
@@ -186,21 +152,6 @@ public class MainFrame extends javax.swing.JFrame {
         this.btnBookRead = btnBookRead;
     }
 
-    public JButton getBtnMovieList() {
-        return btnMovieList;
-    }
-
-    public void setBtnMovieList(JButton btnMovieList) {
-        this.btnMovieList = btnMovieList;
-    }
-
-    public JButton getBtnMovieWatch() {
-        return btnMovieWatch;
-    }
-
-    public void setBtnMovieWatch(JButton btnMovieWatch) {
-        this.btnMovieWatch = btnMovieWatch;
-    }
 
     public JDesktopPane getjDesktopPane1() {
         return DesktopPane;
@@ -217,7 +168,5 @@ public class MainFrame extends javax.swing.JFrame {
     public javax.swing.JDesktopPane DesktopPane;
     private javax.swing.JButton btnBookList;
     private javax.swing.JButton btnBookRead;
-    private javax.swing.JButton btnMovieList;
-    private javax.swing.JButton btnMovieWatch;
     // End of variables declaration//GEN-END:variables
 }
